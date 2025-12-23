@@ -1,6 +1,6 @@
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
     margin: 0;
     padding: 20px;
 }
@@ -16,4 +16,67 @@ h1 {
 p {
     color: #555;
     line-height: 1.5;
+}
+
+body {
+  background-image: url("images/corkboard.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 100% auto;
+  min-height: 100vh;
+}
+
+.board-image {
+  width: 98vw;          /* almost full width of the viewport */
+  max-width: 1600px;    /* optional: don’t stretch too wide on huge screens */
+  height: 95vh;          /* almost full height of the viewport */
+  margin: 2.5vh auto;      /* vertical + horizontal centering */
+  background-image: url("images/granite-texture.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;          /* width of the sidebar */
+  height: 100%;
+  background-color: rgba(50, 50, 50, 0.9); /* semi-transparent dark */
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+  z-index: 10;
+}
+
+.sidebar a {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border-left: 4px solid transparent;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #ffcc00;
+}
+
+.main-content {
+  margin-left: 200px; /* same as sidebar width */
+  padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .board-image {
+    width: 90vw;
+    height: 70vh;
+  }
 }

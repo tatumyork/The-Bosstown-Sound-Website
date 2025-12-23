@@ -1,0 +1,38 @@
+/* Page title */
+.main-content h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Album grid inside the board */
+.album-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Album card styling */
+.album-card {
+  width: 150px;
+  text-align: center;
+  background: rgba(255,255,255,0.9); /* looks like a paper photo */
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.album-card img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.album-card:hover {
+  transform: scale(1.05);
+}
