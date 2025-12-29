@@ -42,17 +42,6 @@ body {
   min-height: 100vh;
 }
 
-.board-image {
-  width: 98vw;          /* almost full width of the viewport */
-  max-width: 1600px;    /* optional: don’t stretch too wide on huge screens */
-  height: 95vh;          /* almost full height of the viewport */
-  margin: 2.5vh auto;      /* vertical + horizontal centering */
-  background-image: url("images/granite-texture.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 
 /* Sidebar */
 .sidebar {
