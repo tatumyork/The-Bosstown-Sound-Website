@@ -13,6 +13,19 @@ h1{
     font-size: 6rem;
     margin-bottom: 10px;
 }
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* header top, board bottom */
+  height: 100%;
+  padding: 20px;
+}
 
 
 /* Paragraph styling */
