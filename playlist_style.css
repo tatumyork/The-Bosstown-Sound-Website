@@ -1,0 +1,74 @@
+/* Page reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background + global text */
+body {
+ background-color: #f2f2f2;
+  font-family: "Arial Black", Impact, Haettenschweiler, "Franklin Gothic Bold", sans-serif;
+  color: #111;
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+/* Home button */
+.home-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  background: #ffffff;
+  color: #111;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: background 0.2s ease;
+}
+
+.home-button:hover {
+  background: #e6e6e6;
+}
+
+/* Headings */
+h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+h3 {
+  font-size: 1.6rem;      /* bigger */
+  font-weight: 900;  
+  max-width: 700px;    
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 60px auto 35px; /* ↑ more space below title */
+}
+
+
+/* Spotify embed wrapper */
+.spotify-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Spotify iframe */
+.spotify-container iframe {
+  width: 100%;
+  max-width: 500px;
+  height: 352px;
+  border: none;
+  border-radius: 12px;
+}
